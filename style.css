@@ -1,0 +1,89 @@
+body,
+html {
+  background-color: #B5E8D4;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.col-lg-12 h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .2em;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
+/* typewriter */
+.typewriter h4 {
+  color: black;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  text-align: right;
+  /* font-size: 1em; */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    margin-right: 20%;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* goggles */
+.container {
+text-align: center;
+}
+
+.icons {
+  width: 20%;
+  margin-top: 90px;
+  align-items: center;
+}
+
+/* button */
+.btn-warning {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  margin-top: 80px;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+/* responsive  */
+
+@media only screen and (max-width: 680px) {
+  /* For desktop:  */
+   .col-lg-12 h1 {
+    font-size: 60px;
+  }
+
+   @media only screen and (max-width: 480px) {
+     /* For desktop: */
+     .col-lg-12 h1 {
+      font-size: 45px;
+    }
+
+}
